@@ -16,7 +16,7 @@ Transform your iPhone or iPad into a wireless game controller for your Mac with 
 
 ## Support
 
-For technical support, visit our [support page](https://[your-username]. github.io/ikontroller-support/) or email RichlenMurden@iCloud.com
+For technical support, visit the official iKontroller support page (https://BiskuitMarie.github.io/ikontroller-support/) or email: RichlenMurden@iCloud.com
 
 ## License
 
