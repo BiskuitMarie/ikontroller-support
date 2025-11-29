@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iKontroller Mac Support</title>
+    <link rel="stylesheet" href="style. css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>iKontroller for Mac</h1>
+            <p>Support & Documentation</p>
+            <div class="platform-links">
+                <a href="index.html">← Back to Main Support</a>
+                <a href="ios.html">iOS Support</a>
+            </div>
+        </header>
+
+        <div class="section">
+            <h2>Setup Guide</h2>
+            <ol>
+                <li>Download iKontroller from the Mac App Store</li>
+                <li>Launch the app and enter your username</li>
+                <li>Grant <strong>Accessibility</strong> permission when prompted</li>
+                <li>Grant <strong>Local Network</strong> permission if asked</li>
+                <li>The app will start listening for iOS device connections</li>
+            </ol>
+        </div>
+
+        <div class="section">
+            <h2>Granting Accessibility Permissions</h2>
+            <p>iKontroller requires Accessibility permissions to simulate keyboard and mouse input from your iOS device. </p>
+            
+            <h3>How to Grant Permission:</h3>
+            <ol>
+                <li>Open <strong>System Settings</strong> (or System Preferences on older macOS)</li>
+                <li>Navigate to <strong>Privacy & Security</strong></li>
+                <li>Click <strong>Accessibility</strong> in the sidebar</li>
+                <li>Click the <strong>+</strong> button (you may need to unlock with your password)</li>
+                <li>Find and select <strong>iKontroller</strong></li>
+                <li>Ensure the checkbox next to iKontroller is <strong>enabled</strong></li>
+                <li>Restart iKontroller if it was already running</li>
+            </ol>
+
+            <div class="note">
+                <strong>Important:</strong> Without Accessibility permissions, iKontroller cannot control your Mac.  This is a macOS security requirement for any app that simulates input. 
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Device Pairing</h2>
+            
+            <h3>Pairing a New iOS Device</h3>
+            <ol>
+                <li>Ensure both devices are on the same network</li>
+                <li>On Mac, go to <strong>Device Pairing</strong> tab</li>
+                <li>On iOS, select your Mac from the discovered devices</li>
+                <li>A 6-digit code will appear on your Mac</li>
+                <li>Enter this code on your iOS device</li>
+                <li>Devices are now paired! </li>
+            </ol>
+
+            <h3>Managing Paired Devices</h3>
+            <ul>
+                <li><strong>Forget:</strong> Remove a device and delete all its mappings</li>
+                <li><strong>Block:</strong> Prevent a device from pairing again</li>
+                <li><strong>Unblock:</strong> Settings → Blocked Devices → Unblock</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>Settings & Customization</h2>
+            
+            <h3>Adjusting Sensitivity</h3>
+            <p>Go to <strong>Settings</strong> → <strong>General</strong>:</p>
+            <ul>
+                <li><strong>Relative Sensitivity:</strong> Controls cursor movement speed in relative mode (1-10)</li>
+                <li><strong>Scroll Sensitivity:</strong> Controls scroll wheel speed (1-10)</li>
+            </ul>
+
+            <h3>Changing Username</h3>
+            <ol>
+                <li>Go to Settings → General</li>
+                <li>Click the pencil icon next to your username</li>
+                <li>Enter new username</li>
+                <li>Click Save (the app will validate the name)</li>
+            </ol>
+
+            <div class="note">
+                <strong>Note:</strong> Username validation ensures compatibility with network discovery (Bonjour).  Very long names or excessive emojis may be rejected.
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Active Keys Display</h2>
+            <p>iKontroller shows floating visual feedback of active keys on your Mac screen.  This helps with:</p>
+            <ul>
+                <li>Verifying key presses during gaming</li>
+                <li>Streaming or recording gameplay</li>
+                <li>Debugging custom mappings</li>
+            </ul>
+            <p>Keys appear as they're pressed and fade out when released.</p>
+        </div>
+
+        <div class="section">
+            <h2>Troubleshooting Mac Issues</h2>
+            
+            <h3>Keys Not Working / Stuck Keys</h3>
+            <ul>
+                <li>Verify Accessibility permissions are granted</li>
+                <li>Disconnect and reconnect your iOS device</li>
+                <li>iKontroller has automatic stuck key detection and correction</li>
+                <li>Press the stuck key on your physical keyboard to release it</li>
+            </ul>
+
+            <h3>Mouse Cursor Behavior Issues</h3>
+            <ul>
+                <li>Adjust Relative Sensitivity in Settings</li>
+                <li>Switch between Relative and Absolute modes on iOS</li>
+                <li>Ensure cursor isn't hitting screen edges (automatic clamping prevents this)</li>
+            </ul>
+
+            <h3>Connection Drops After Network Change</h3>
+            <ul>
+                <li>iKontroller automatically detects network changes</li>
+                <li>Both apps will attempt to reconnect</li>
+                <li>If reconnection fails, manually disconnect and reconnect on iOS</li>
+            </ul>
+
+            <h3>Firewall Blocking Connections</h3>
+            <p>If using a firewall:</p>
+            <ol>
+                <li>Open System Settings → Network → Firewall</li>
+                <li>Click Options</li>
+                <li>Ensure iKontroller is allowed to receive incoming connections</li>
+                <li>Add ports 8888, 8889, 8896-8899 if using custom firewall rules</li>
+            </ol>
+        </div>
+
+        <div class="section">
+            <h2>Technical Details</h2>
+            
+            <h3>Network Ports Used</h3>
+            <ul>
+                <li><strong>TCP 8888:</strong> Main control connection and pairing</li>
+                <li><strong>UDP 8889:</strong> Legacy control packets</li>
+                <li><strong>TCP 8898:</strong> Binary controls (keyboard/mouse)</li>
+                <li><strong>TCP 8899:</strong> Touchpad events</li>
+                <li><strong>UDP 8896:</strong> Binary controls (UDP mode)</li>
+                <li><strong>UDP 8897:</strong> Touchpad events (UDP mode)</li>
+            </ul>
+
+            <h3>Supported Features</h3>
+            <ul>
+                <li>Apple Silicon (M1/M2/M3/M4) and Intel Macs</li>
+                <li>Multiple external displays</li>
+                <li>Full-screen apps and games</li>
+                <li>Modifier keys (Shift, Command, Option, Control)</li>
+                <li>Reference-counted key presses (prevents stuck keys)</li>
+                <li>Sub-20ms input latency on local networks</li>
+            </ul>
+        </div>
+
+        <footer>
+            <p><a href="index.html">← Back to Main Support</a></p>
+            <p>&copy; 2025 Richlen Murden. All rights reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>
