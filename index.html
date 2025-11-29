@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iKontroller Support</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #f5f5f7;
+        }
+        
+        .container {
+            max-width: 980px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+        
+        header {
+            text-align: center;
+            margin-bottom: 60px;
+            padding: 40px 0;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border-radius: 12px;
+        }
+        
+        header h1 {
+            font-size: 3em;
+            margin-bottom: 10px;
+        }
+        
+        header p {
+            font-size: 1.2em;
+            opacity: 0.9;
+        }
+        
+        .platform-links {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            margin-top: 20px;
+            flex-wrap: wrap;
+        }
+        
+        .platform-links a {
+            display: inline-block;
+            padding: 10px 20px;
+            background: rgba(255, 255, 255, 0.2);
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            transition: background 0.3s;
+        }
+        
+        .platform-links a:hover {
+            background: rgba(255, 255, 255, 0.3);
+        }
+        
+        . section {
+            background: white;
+            padding: 40px;
+            margin-bottom: 30px;
+            border-radius: 12px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+        }
+        
+        h2 {
+            color: #667eea;
+            margin-bottom: 20px;
+            font-size: 2em;
+        }
+        
+        h3 {
+            color: #555;
+            margin-top: 30px;
+            margin-bottom: 15px;
+            font-size: 1. 4em;
+        }
+        
+        .faq-item {
+            margin-bottom: 30px;
+        }
+        
+        .faq-item h4 {
+            color: #667eea;
+            margin-bottom: 10px;
+            font-size: 1.1em;
+        }
+        
+        .requirements {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin: 20px 0;
+        }
+        
+        .req-card {
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border-left: 4px solid #667eea;
+        }
+        
+        .req-card h4 {
+            color: #667eea;
+            margin-bottom: 10px;
+        }
+        
+        .contact-options {
+            display: flex;
+            gap: 20px;
+            margin-top: 20px;
+            flex-wrap: wrap;
+        }
+        
+        .contact-card {
+            flex: 1;
+            min-width: 200px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            text-align: center;
+        }
+        
+        .contact-card h4 {
+            color: #667eea;
+            margin-bottom: 10px;
+        }
+        
+        .contact-card a {
+            color: #667eea;
+            text-decoration: none;
+        }
+        
+        .contact-card a:hover {
+            text-decoration: underline;
+        }
+        
+        code {
+            background: #f4f4f4;
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-family: "SF Mono", Monaco, monospace;
+            font-size: 0.9em;
+        }
+        
+        ol, ul {
+            margin-left: 20px;
+            margin-bottom: 15px;
+        }
+        
+        li {
+            margin-bottom: 10px;
+        }
+        
+        .note {
+            background: #fff3cd;
+            border-left: 4px solid #ffc107;
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 4px;
+        }
+        
+        footer {
+            text-align: center;
+            margin-top: 60px;
+            padding: 20px;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>iKontroller</h1>
+            <p>Wireless Game Controller for Mac</p>
+            <div class="platform-links">
+                <a href="ios.html">iOS Support</a>
+                <a href="mac.html">Mac Support</a>
+                <a href="privacy.html">Privacy Policy</a>
+                <a href="terms.html">Terms of Service</a>
+            </div>
+        </header>
+
+        <div class="section">
+            <h2>Getting Started</h2>
+            <p>iKontroller transforms your iPhone or iPad into a wireless game controller for your Mac. Follow these steps to get started:</p>
+            
+            <ol>
+                <li><strong>Install both apps:</strong> Download iKontroller on both your iOS device and your Mac from the App Store</li>
+                <li><strong>Grant permissions:</strong> On Mac, grant Accessibility permissions when prompted</li>
+                <li><strong>Connect devices:</strong> Open both apps and ensure they're on the same Wi-Fi network</li>
+                <li><strong>Pair:</strong> Follow the on-screen pairing instructions with the 6-digit code</li>
+                <li><strong>Start controlling:</strong> You're ready to go! </li>
+            </ol>
+        </div>
+
+        <div class="section">
+            <h2>System Requirements</h2>
+            <div class="requirements">
+                <div class="req-card">
+                    <h4>📱 iOS</h4>
+                    <ul>
+                        <li>iOS 14.0 or later</li>
+                        <li>iPhone or iPad</li>
+                        <li>Wi-Fi or USB cable</li>
+                    </ul>
+                </div>
+                <div class="req-card">
+                    <h4>💻 macOS</h4>
+                    <ul>
+                        <li>macOS 11.0 or later</li>
+                        <li>Apple Silicon or Intel</li>
+                        <li>Accessibility permissions</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Frequently Asked Questions</h2>
+            
+            <div class="faq-item">
+                <h4>Q: How do I grant Accessibility permissions on Mac?</h4>
+                <p><strong>A:</strong> Go to <code>System Settings</code> → <code>Privacy & Security</code> → <code>Accessibility</code>, then enable iKontroller in the list. </p>
+            </div>
+
+            <div class="faq-item">
+                <h4>Q: My devices won't connect. What should I do? </h4>
+                <p><strong>A:</strong> Try these steps:</p>
+                <ol>
+                    <li>Ensure both devices are on the same Wi-Fi network</li>
+                    <li>Restart both apps</li>
+                    <li>Check that your firewall isn't blocking the connection</li>
+                    <li>Try USB cable connection as an alternative</li>
+                </ol>
+            </div>
+
+            <div class="faq-item">
+                <h4>Q: The keyboard keys are "stuck" or not releasing</h4>
+                <p><strong>A:</strong> iKontroller has automatic key unsticking detection. If a key gets stuck:</p>
+                <ul>
+                    <li>Disconnect and reconnect your iOS device</li>
+                    <li>Press the stuck key on your physical keyboard</li>
+                    <li>The app automatically detects and fixes double-presses</li>
+                </ul>
+            </div>
+
+            <div class="faq-item">
+                <h4>Q: Can I use multiple iOS devices with one Mac?</h4>
+                <p><strong>A:</strong> Yes! You can pair multiple iOS devices to a single Mac. Each device maintains its own custom layouts and mappings.</p>
+            </div>
+
+            <div class="faq-item">
+                <h4>Q: How do I adjust touchpad sensitivity?</h4>
+                <p><strong>A:</strong> On Mac, go to <code>Settings</code> → <code>General</code> and adjust the "Relative Sensitivity" and "Scroll Sensitivity" sliders.</p>
+            </div>
+
+            <div class="faq-item">
+                <h4>Q: Does this work with games in full-screen mode?</h4>
+                <p><strong>A:</strong> Yes! iKontroller is designed to work seamlessly with full-screen apps and games.</p>
+            </div>
+
+            <div class="faq-item">
+                <h4>Q: What's the difference between relative and absolute touchpad modes?</h4>
+                <p><strong>A:</strong></p>
+                <ul>
+                    <li><strong>Relative mode:</strong> Best for gaming (FPS, etc.).  Moves cursor relative to current position, automatically recenters</li>
+                    <li><strong>Absolute mode:</strong> Direct cursor positioning. Touch maps to exact screen location</li>
+                </ul>
+            </div>
+
+            <div class="faq-item">
+                <h4>Q: How do I create custom button layouts?</h4>
+                <p><strong>A:</strong> On iOS, tap the "Layouts" button, then "+" to create a new layout.  Drag controls from the palette and position them as needed.  Map each control to keyboard keys or mouse buttons.</p>
+            </div>
+
+            <div class="faq-item">
+                <h4>Q: Can I use this over the internet (not local network)?</h4>
+                <p><strong>A:</strong> No. For security and performance, iKontroller only works on local networks or via USB cable.  No internet connection is required.</p>
+            </div>
+
+            <div class="faq-item">
+                <h4>Q: Is my data being sent to any servers?</h4>
+                <p><strong>A:</strong> No. All communication is direct between your iOS device and Mac. We don't collect, store, or transmit any data to external servers.  See our <a href="privacy.html">Privacy Policy</a> for details.</p>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Troubleshooting</h2>
+            
+            <h3>Connection Issues</h3>
+            <ul>
+                <li><strong>Devices not discovering each other:</strong> Check Wi-Fi settings, ensure Local Network permissions are granted on iOS</li>
+                <li><strong>Connection drops frequently:</strong> Try switching to USB cable connection, or check for Wi-Fi interference</li>
+                <li><strong>High latency:</strong> Reduce distance between devices, close bandwidth-heavy apps, or use 5GHz Wi-Fi</li>
+            </ul>
+
+            <h3>Permission Issues</h3>
+            <ul>
+                <li><strong>Mac Accessibility permission:</strong> System Settings → Privacy & Security → Accessibility → Enable iKontroller</li>
+                <li><strong>iOS Local Network permission:</strong> Settings → iKontroller → Local Network → Enable</li>
+            </ul>
+
+            <h3>Mapping Issues</h3>
+            <ul>
+                <li><strong>Mappings not saving:</strong> Ensure you've tapped "Done" or closed the mapping popup after setting keys</li>
+                <li><strong>Keys not responding:</strong> Check that the mapping version is synchronized (disconnect and reconnect)</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>Contact Support</h2>
+            <p>Need more help?  Reach out to us:</p>
+            <div class="contact-options">
+                <div class="contact-card">
+                    <h4>📧 Email</h4>
+                    <a href="mailto:support@ikontroller.app">support@ikontroller.app</a>
+                </div>
+                <div class="contact-card">
+                    <h4>🐛 Bug Reports</h4>
+                    <a href="https://github.com/yourusername/ikontroller-support/issues" target="_blank">GitHub Issues</a>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <p>&copy; 2025 Richlen Murden. All rights reserved.</p>
+            <p><a href="privacy.html">Privacy Policy</a> | <a href="terms.html">Terms of Service</a></p>
+        </footer>
+    </div>
+</body>
+</html>
