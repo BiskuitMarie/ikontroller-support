@@ -118,7 +118,6 @@
             <ul>
                 <li>Adjust Relative Sensitivity in Settings</li>
                 <li>Switch between Relative and Absolute modes on iOS</li>
-                <li>Ensure cursor isn't hitting screen edges (automatic clamping prevents this)</li>
             </ul>
 
             <h3>Connection Drops After Network Change</h3>
@@ -134,7 +133,7 @@
                 <li>Open System Settings → Network → Firewall</li>
                 <li>Click Options</li>
                 <li>Ensure iKontroller is allowed to receive incoming connections</li>
-                <li>Add ports 8888, 8889, 8896-8899 if using custom firewall rules</li>
+                <li>Add ports 8888, 8889, 8896, 8897, 8898, 8899 if using custom firewall rules</li>
             </ol>
         </div>
 
@@ -143,19 +142,19 @@
             
             <h3>Network Ports Used</h3>
             <ul>
-                <li><strong>TCP 8888:</strong> Main control connection and pairing</li>
-                <li><strong>UDP 8889:</strong> Legacy control packets</li>
-                <li><strong>TCP 8898:</strong> Binary controls (keyboard/mouse)</li>
-                <li><strong>TCP 8899:</strong> Touchpad events</li>
-                <li><strong>UDP 8896:</strong> Binary controls (UDP mode)</li>
-                <li><strong>UDP 8897:</strong> Touchpad events (UDP mode)</li>
+                <li><strong>TCP 8888:</strong> Main connection for pairing and mappings</li>
+                <li><strong>UDP 8889:</strong> Main connection for pairing and mappings (UDP)</li>
+                <li><strong>TCP 8898:</strong> Dedicated to binary controls data (buttons and joysticks input).</li>
+                <li><strong>TCP 8899:</strong> Dedicated to binary touchpad data (high-frequency touchpad and mouse input).</li>
+                <li><strong>UDP 8896:</strong> Dedicated to binary controls data (ultra high-frequency buttons and joysticks input).</li>
+                <li><strong>UDP 8897:</strong> Dedicated to binary touchpad data (ultra high-frequency touchpad and mouse input).</li>
             </ul>
 
             <h3>Supported Features</h3>
             <ul>
                 <li>Apple Silicon (M1/M2/M3/M4) and Intel Macs</li>
                 <li>Multiple external displays</li>
-                <li>Full-screen apps and games</li>
+                <li>Full-screen/minimized/windowed apps and games</li>
                 <li>Modifier keys (Shift, Command, Option, Control)</li>
                 <li>Reference-counted key presses (prevents stuck keys)</li>
                 <li>Sub-20ms input latency on local networks</li>
@@ -164,7 +163,7 @@
 
         <footer>
             <p><a href="index.html">← Back to Main Support</a></p>
-            <p>&copy; 2025 Richlen Murden. All rights reserved.</p>
+            <p>&copy; Copyright 2025 iKontroller Inc. All rights reserved.</p>
         </footer>
     </div>
 </body>
