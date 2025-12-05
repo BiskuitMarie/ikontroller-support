@@ -2,6 +2,11 @@
 
 Official support website for iKontroller - Wireless Game Controller for Mac. 
 
+## Downloads
+
+- **[iKontroller for iOS & iPadOS (App Store)](https://apps.apple.com/us/app/ikontroller/id6755539340)**
+- **[iKontroller Desktop for macOS (Mac App Store)](https://apps.apple.com/us/app/ikontroller-desktop/id6755576478?mt=12)**
+
 ## Links
 
 - **Main Support:** https://BiskuitMarie.github.io/ikontroller-support/
