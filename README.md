@@ -25,4 +25,4 @@ For technical support, visit the official iKontroller support page (https://Bisk
 
 ## License
 
-© Copyright 2025 iKontroller Inc. All rights reserved.
+© Copyright 2026 iKontroller Inc. All rights reserved.
