@@ -42,6 +42,7 @@ You can map a gyrostick to 4 specific keys on your keyboard. Once mapped, tiltin
 
 
 How does iKontroller connect to my Mac?
+
 • Wi-Fi network, Cellular network, USB-C cable or Lightning cable
 
 ## Support
