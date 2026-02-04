@@ -1,6 +1,6 @@
 # iKontroller Support
 
-Official support website for iKontroller - Wireless Game Controller for Mac. 
+Official support website for iKontroller - Use your iPhone/iPad to control Games & Apps on your Mac.
 
 ## Downloads
 
