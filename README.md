@@ -41,6 +41,7 @@ You can map a joystick to 4 specific keys on your keyboard. Once mapped, moving 
 You can map a gyrostick to 4 specific keys on your keyboard. Once mapped, tilting and rotating your device in any direction will trigger the corresponding key(s) on your Mac.
 
 
+
 How does iKontroller connect to my Mac?
 
 • Wi-Fi network, Cellular network, USB-C cable or Lightning cable
