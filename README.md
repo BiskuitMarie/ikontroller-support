@@ -21,7 +21,6 @@ Transform your iPhone/iPad into a controller for your Mac.
 
 How does iKontroller achieve this?
 
-
 • Touchpad
 
 High-precision touchpad with relative and absolute modes. Relative mode is used in games to move the camera around. Absolute mode is used to move your cursor around. 
