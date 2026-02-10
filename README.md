@@ -4,8 +4,8 @@ Official support website for iKontroller - Use your iPhone/iPad to control your 
 
 ## Downloads
 
-- **[iKontroller for iOS & iPadOS (App Store)](https://apps.apple.com/us/app/ikontroller/id6755539340)**
-- **[iKontroller Desktop for macOS (Mac App Store)](https://apps.apple.com/us/app/ikontroller-desktop/id6755576478?mt=12)**
+- **[iKontroller for iOS & iPadOS (App Store)](https://apps.apple.com/app/ikontroller/id6755539340)**
+- **[iKontroller Desktop for macOS (Mac App Store)](https://apps.apple.com/app/ikontroller-desktop/id6755576478?mt=12)**
 
 ## Links
 
