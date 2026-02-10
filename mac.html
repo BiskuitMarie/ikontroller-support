@@ -61,16 +61,16 @@
             <ol>
                 <li>Ensure your Mac and iPhone/iPad are on the same Wi-Fi network, Cellular network or connected via USB-C/Lightning cable.</li>
                 <li>On your Mac, go to the <strong>Device Pairing</strong> tab</li>
-                <li>On iOS, select your Mac from the discovered devices</li>
-                <li>A 6-digit code will appear on your Mac</li>
-                <li>Enter this code on your iOS device</li>
+                <li>On your iPhone/iPad, select your Mac's username from the discovered devices</li>
+                <li>Accept the pairing request on your Mac. A 6-digit code will then appear</li>
+                <li>Enter this code on your iPhone/iPad</li>
                 <li>The devices are now paired! </li>
             </ol>
 
             <h3>Managing Paired Devices</h3>
             <ul>
                 <li><strong>Forget:</strong> Remove a device as paired and delete all its mappings and data</li>
-                <li><strong>Block:</strong> Remove a device as paired, delete all its mappings and data and prevent the device from pairing again. A blocked device cannot send you any data</li>
+                <li><strong>Block:</strong> Remove a device as paired, delete all its mappings and data and prevent the device from pairing again. A blocked device cannot send you any pairing requests and data</li>
                 <li><strong>Unblock:</strong> Settings → Blocked Devices → Unblock</li>
             </ul>
         </div>
@@ -79,31 +79,31 @@
             <h2>Settings & Customization</h2>
             
             <h3>Adjusting Sensitivity</h3>
-            <p>Go to <strong>Settings</strong> → <strong>General</strong>:</p>
+            <p>Navigate to <strong>Settings</strong> → <strong>General</strong>:</p>
             <ul>
                 <li><strong>Relative Sensitivity:</strong> Controls in-game camera movement speed</li>
-                <li><strong>Scroll Sensitivity:</strong> Controls scroll wheel speed</li>
+                <li><strong>Scroll Sensitivity:</strong> Controls vertical and horizontal scrolling speed</li>
             </ul>
 
             <h3>Changing Username</h3>
             <ol>
-                <li>Go to Settings → General</li>
+                <li>Navigate to <strong>Settings</strong> → <strong>General</strong></li>
                 <li>Click the pencil icon next to your username</li>
-                <li>Enter new username</li>
-                <li>Click Save (the app will validate the name)</li>
+                <li>Enter your new username</li>
+                <li>Click Save (iKontroller validates and saves the username)</li>
             </ol>
 
             <div class="note">
-                <strong>Note:</strong> Username validation ensures compatibility with network discovery (Bonjour).  Very long names or excessive emojis may be rejected.
+                <strong>Note:</strong> Username validation ensures compatibility with network discovery. Very long names or excessive emojis may be rejected.
             </div>
         </div>
 
         <div class="section">
             <h2>Active Keys Visualization</h2>
-            <p>iKontroller shows floating visual feedback of active keys on your Mac screen. This helps with:</p>
+            <p>iKontroller Desktop shows floating visual feedback of active keys on your "Main" screen. This helps with:</p>
             <ul>
-                <li>Verifying key presses during gaming</li>
-                <li>Streaming or recording gameplay</li>
+                <li>Verifying key press(es) during use</li>
+                <li>Streaming and recording</li>
                 <li>Debugging custom mappings</li>
             </ul>
             <p>Keys appear as they're pressed and fade out when released.</p>
@@ -116,21 +116,21 @@
             <ul>
                 <li>Verify Accessibility permissions are granted</li>
                 <li>Disconnect and reconnect your iPhone/iPad</li>
-                <li>iKontroller has automatic stuck key detection and correction; Press or use the button/joystick that caused the stuck key(s) again and it should get released</li>
+                <li>iKontroller Desktop has automatic stuck key detection and correction; Press or use the control(s) that caused the stuck key(s) again and release(s) will be sent</li>
                 <li>Press the stuck key on your physical keyboard to release it</li>
             </ul>
 
             <h3>Mouse Cursor Behavior Issues</h3>
             <ul>
                 <li>Adjust Relative Sensitivity in Settings</li>
-                <li>Switch between Relative and Absolute modes on iOS</li>
+                <li>Switch between Relative and Absolute mode on your iPhone/iPad</li>
             </ul>
 
             <h3>Connection Drops After Network Change</h3>
             <ul>
                 <li>iKontroller automatically detects network changes</li>
                 <li>Both apps will attempt to reconnect</li>
-                <li>If reconnection fails, manually disconnect and reconnect on iOS</li>
+                <li>If reconnection fails, manually disconnect and reconnect on your iPhone/iPad</li>
             </ul>
 
             <h3>Firewall Blocking Connections</h3>
@@ -141,30 +141,6 @@
                 <li>Ensure iKontroller is allowed to receive incoming connections</li>
                 <li>Add ports 8888, 8889, 8896, 8897, 8898, 8899 if using custom firewall rules</li>
             </ol>
-        </div>
-
-        <div class="section">
-            <h2>Technical Details</h2>
-            
-            <h3>Network Ports Used</h3>
-            <ul>
-                <li><strong>TCP 8888:</strong> Main connection for pairing and mappings</li>
-                <li><strong>UDP 8889:</strong> Main connection for pairing and mappings (ultra high-frequency)</li>
-                <li><strong>TCP 8898:</strong> Dedicated to binary controls data (buttons and joysticks input)</li>
-                <li><strong>TCP 8899:</strong> Dedicated to binary touchpad data (touchpad and mouse input)</li>
-                <li><strong>UDP 8896:</strong> Dedicated to binary controls data (ultra high-frequency buttons and joysticks input)</li>
-                <li><strong>UDP 8897:</strong> Dedicated to binary touchpad data (ultra high-frequency touchpad and mouse input)</li>
-            </ul>
-
-            <h3>Supported Features</h3>
-            <ul>
-                <li>Apple Silicon (M1/M2/M3/M4) and Intel Macs</li>
-                <li>Multiple external displays</li>
-                <li>Full-screen/minimized/windowed apps and games</li>
-                <li>Modifier keys (Shift, Command, Option, Control)</li>
-                <li>Reference-counted key presses (prevents stuck keys)</li>
-                <li>Sub-20ms input latency on local networks</li>
-            </ul>
         </div>
 
         <footer>
