@@ -180,6 +180,14 @@ li {
     border-radius: 4px;
 }
 
+.responsive-video {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    display: block; /* Remove inline spacing */
+    margin: 0 auto;  /* Optional: Center the video */
+}
+
 footer {
     text-align: center;
     margin-top: 60px;
