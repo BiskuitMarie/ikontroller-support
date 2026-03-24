@@ -263,3 +263,56 @@ footer a:visited {
 footer a:hover {
     text-decoration: underline;
 }
+
+/* Auto dark mode based on the visitor's device setting */
+@media (prefers-color-scheme: dark) {
+    body {
+        background: #0b1220; /* dark navy */
+        color: #e6eaf2;
+    }
+
+    .section {
+        background: #121a2b; /* dark card background */
+        box-shadow: 0 2px 10px rgba(0,0,0,0.35);
+    }
+
+    /* Keep secondary headings readable */
+    h3 {
+        color: #c8d1e3;
+    }
+
+    /* Cards inside sections */
+    .req-card,
+    .contact-card {
+        background: #0f1726;
+        border-left-color: var(--brand-blue-light); /* optional accent pop */
+    }
+
+    /* Inline code blocks */
+    code {
+        background: rgba(255, 255, 255, 0.08);
+        color: #e6eaf2;
+    }
+
+    /* Notes (optional tweak so yellow isn't too bright) */
+    .note {
+        background: rgba(255, 193, 7, 0.12);
+        border-left-color: #ffc107;
+        color: #e6eaf2;
+    }
+
+    /* Footer text */
+    footer {
+        color: #aab4c8;
+    }
+
+    /* Footer links still blue + underline on hover (your preference) */
+    footer a,
+    footer a:visited {
+        color: var(--brand-blue-light);
+        text-decoration: none;
+    }
+    footer a:hover {
+        text-decoration: underline;
+    }
+}
