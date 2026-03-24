@@ -113,8 +113,15 @@ h2 {
     font-size: 2em;
 }
 
+/*
 h3 {
     color: #555;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    font-size: 1.4em;
+}*/
+h3 {
+    color: var(--brand-accent);
     margin-top: 30px;
     margin-bottom: 15px;
     font-size: 1.4em;
