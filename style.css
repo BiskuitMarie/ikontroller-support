@@ -25,11 +25,21 @@ body {
     padding: 40px 20px;
 }
 
+/*
 header {
     text-align: center;
     margin-bottom: 60px;
     padding: 40px;
     background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    border-radius: 12px;
+}*/
+
+header {
+    text-align: center;
+    margin-bottom: 60px;
+    padding: 40px;
+    background: var(--brand-gradient);
     color: white;
     border-radius: 12px;
 }
