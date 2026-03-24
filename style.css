@@ -278,7 +278,7 @@ footer a:hover {
 
     /* Keep secondary headings readable */
     h3 {
-        color: #c8d1e3;
+       color: var(--brand-accent);
     }
 
     /* Cards inside sections */
