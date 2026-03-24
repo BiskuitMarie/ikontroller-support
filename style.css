@@ -127,6 +127,20 @@ h3 {
     font-size: 1.4em;
 }
 
+a {
+    color: var(--brand-accent);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Ensure visited links don't turn purple */
+a:visited {
+    color: var(--brand-accent);
+}
+
 .faq-item {
     margin-bottom: 30px;
 }
