@@ -4,17 +4,9 @@
     box-sizing: border-box;
 }
 
-/*
 :root {
     --brand-blue-deep: #0a3d91;
     --brand-blue-light: #4fb3ff;
-
-    --brand-gradient: linear-gradient(135deg, var(--brand-blue-deep) 0%, var(--brand-blue-light) 100%);
-    --brand-accent: var(--brand-blue-light);
-}*/
-:root {
-    --brand-blue-deep: #000328;
-    --brand-blue-light: #00458e;
 
     --brand-gradient: linear-gradient(135deg, var(--brand-blue-deep) 0%, var(--brand-blue-light) 100%);
     --brand-accent: var(--brand-blue-light);
